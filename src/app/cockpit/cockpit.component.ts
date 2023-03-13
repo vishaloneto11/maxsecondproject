@@ -12,6 +12,7 @@ export class CockpitComponent {
   newServercontent: string = ' ';
 
   onAddServer() {
+
     this.serverCreated.emit({ serverName: this.newServerName, serverContent: this.newServercontent })
   }
   onAddBlueprint() {
